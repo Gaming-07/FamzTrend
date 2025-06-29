@@ -1,0 +1,104 @@
+body {
+    overflow-x: hidden;
+}
+
+#top-banner {
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    text-align: center;
+    color: black;
+    min-height: 2%;
+    user-select: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#navbar {
+    margin-top: 0px;
+    background-color: black;
+    border: 2px solid white;
+    height: 60px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.dropdown-menu {
+    display: block;
+    opacity: 0;
+}
+
+.dropdown-menu.show {
+    animation: dm-animation;
+    animation-duration: 0.45s;
+    animation-fill-mode: both;
+}
+
+/* animation for navbar dropdown menu */
+@keyframes dm-animation {
+    to {
+        opacity: 1;
+    }
+}
+
+#navbar-logo {
+    height: 40px;
+    width: 120px;
+}
+
+#main-body {
+    height: fit-content;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.nav-buttons {
+    color: white !important;
+}
+
+#dm {
+    background-color: black;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.navbar-collapse {
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#bg-video {
+    width: 100vw;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#trending-box{
+    text-align: center;
+}
+
+.trending-box-btn{
+    width: 100%;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.tb-card-body{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    top: 0;
+}
+
+.tb-card-body:hover{
+    top: -15px;
+    transition: top 0.3s ease-out;
+}
